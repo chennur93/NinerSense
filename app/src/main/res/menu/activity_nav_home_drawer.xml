@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Features">
+        <menu>
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/ic_menu_gallery"
+                android:title="Home" />
+            <item
+                android:id="@+id/nav_security"
+                android:icon="@drawable/ic_menu_camera"
+                android:title="Security System" />
+            <item
+                android:id="@+id/nav_lights"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Lights" />
+            <item
+                android:id="@+id/nav_thermostats"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Thermostats" />
+
+            <item
+                android:id="@+id/nav_video"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Video" />
+            <item
+                android:id="@+id/nav_energy"
+                android:icon="@drawable/ic_menu_slideshow"
+                android:title="Energy" />
+        </menu>
+        </item>
+    </group>
+
+</menu>

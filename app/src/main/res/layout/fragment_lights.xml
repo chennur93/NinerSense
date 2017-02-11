@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="meghashyam.ninersense.LightsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LIGHTS"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lightstitle"
+        android:textSize="25sp"/>
+
+        <TextView
+            android:layout_below="@id/lightstitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Floor"
+            android:gravity="center"
+            android:id="@+id/textView3"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:layout_gravity="center_vertical"
+            android:paddingTop="10dp"/>
+    <EditText
+        android:layout_below="@id/lightstitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_toRightOf="@id/textView3"
+        android:id="@+id/floor"
+        android:hint="floor"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    <EditText
+            android:layout_below="@id/lightstitle"
+            android:layout_width="68dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:gravity="center"
+            android:layout_toRightOf="@id/floor"
+            android:id="@+id/editText_id"
+            android:hint="lightID"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical" />
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekBar"
+        android:paddingTop="15dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:max="100"
+        android:layout_below="@+id/floor"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/seekBar"
+        android:id="@+id/lights_update"
+        android:layout_gravity="center_horizontal" />
+
+
+
+</RelativeLayout>
